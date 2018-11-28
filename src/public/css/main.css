@@ -1,9 +1,32 @@
 body{
     margin: 0%;
-    background: rgb(158, 158, 188);
+    background-image: url("/../ProyectPW/src/public/img/1.jpg") no-repeat center center;;
+    background-color: #cccccc;
     font-family: 'Allerta Stencil', sans-serif;
 }
 
+img{
+margin-top: 22px;
+height: 25vh;
+width: 25vw;
+max-height: inherit;
+max-width: inherit;
+}
+
+.card{
+margin-top: 66px;
+align-items: center
+}
+
+button.btn.btn-danger.btn-block.btn-sm{
+    background-color: rgb(107, 41, 41)
+}
+
+img.about{
+    width: 50vw;
+    height: 40vh;
+    border-radius: 6%;
+}
 
 /*
 
@@ -12,12 +35,15 @@ body{
 
 
 
-
 */
-
+.nav-link{
+color: white;
+}
 
   
-  
+.navbar-nav{
+font-size: 25px;
+}
 
 nav.navabar ul{
     list-style-type: none;
@@ -54,7 +80,7 @@ nav.navbar li a:hover:not(.active) {
 nav.u {
     height: 100px;
     background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(0deg, rgb(158, 158, 188), rgb(80, 132, 80)); 
+    background-image: linear-gradient(0deg, rgb(37, 37, 168), rgb(80, 132, 80)); 
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -63,6 +89,17 @@ font-family: 'Allerta Stencil', sans-serif;
 font-size: 6vw;
 padding-left: 50px;
 padding-right: 50px;
+}
+
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(183deg, rgb(86, 179, 202), rgb(80, 132, 80)); 
+    border-bottom: 5px solid rgb(158, 158, 188);
+    height: 9vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 6;
 }
 
 hr{
@@ -104,8 +141,8 @@ hr.a{
 hr.a1{
     height: 100vh;
     width: 2px;
-    color: black;
-    background-color: black;
+    color: rgb(46, 46, 46);
+    background-color: rgb(43, 43, 43);
     margin: 0%;
     border: none;
     position: fixed;
@@ -116,8 +153,8 @@ hr.a1{
 hr.b{
     height: 100vh;
     width: 3px;
-    color: black;
-    background-color: black;
+    color: rgb(95, 95, 95);
+    background-color: rgb(87, 87, 87);
     margin: 0%;
     border: none;
     position: fixed;
@@ -128,8 +165,8 @@ hr.b{
 hr.b1{
     height: 100vh;
     width: 4px;
-    color: black;
-    background-color: black;
+    color: rgb(116, 116, 116);
+    background-color: rgb(126, 126, 126);
     margin: 0%;
     border: none;
     position: fixed;
@@ -140,8 +177,8 @@ hr.b1{
 hr.c{
     height: 100vh;
     width: 6px;
-    color: black;
-    background-color: black;
+    color: rgb(177, 177, 177);
+    background-color: rgb(161, 161, 161);
     margin: 0%;
     border: none;
     position: fixed;
@@ -211,11 +248,19 @@ hr.-c{
 div.prx{
 display: flex;
 }
+
+div.txt{
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 66px;
+}
 img.parax{
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 66.6%;
+    margin-left: 33px;
+    margin-top: 99px;
 }
 div.main {
 	display: flex;
@@ -265,12 +310,18 @@ p.r{
 }
 
 div.bt5{
-align-items: center;
+justify-content: center;
+display:flex;
+}
+
+div.about{
+    display: flex;
+    justify-content: center;
 }
 
 button{
     background:rgb(80, 132, 80); 
-    color:rgb(158, 158, 188);
+    color:white;
     border:none;
     position:relative;
     height:60px;
@@ -283,7 +334,7 @@ button{
     justify-self: center;
   }
   button:hover{
-    background:rgb(158, 158, 188);
+    background:white;
     color:rgb(80, 132, 80); 
   }
   button:before,button:after{
@@ -305,8 +356,15 @@ button{
   button:hover:before,button:hover:after{
     width:100%;
     transition:800ms ease all;
+
   }
   
+  .navbar-dark .navbar-nav .nav-link{
+      color: rgb(255, 255, 255);
+  }
   
-  
-  
+.navbar-dark .navbar-nav .nav-link:hover{
+    background:rgb(224, 254, 255);
+    color:rgb(80, 132, 80); 
+    border-radius: 9%;
+  }
