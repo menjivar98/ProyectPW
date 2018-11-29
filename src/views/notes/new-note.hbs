@@ -1,4 +1,5 @@
 <div class="col-md-4 mx-auto">
+  <p>{{msg}}</p>
   <div class="card text-center">
     <div class="card-header">
       <h3>NEW NOTE</h3>
@@ -13,11 +14,24 @@
         </div>
         <div class="form-group">
           <button class="btn btn-primary btn-block" type="submit">
+
+
+/**/
+         
+
+
+    <br>
+    <br>
             SAVE
           </button>
         </div>
       </form>
     </div>
   </div>
+     <form class="fileupload" action="/upload" method="post" enctype="multipart/form-data">
+      <h1>Upload File Here</h1>
+      <input type="file" name="upfile" value="">
+      <input type="submit" />
+    </form>
 </div>
 

@@ -6,6 +6,11 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
 
+
+var upload = require('express-fileupload');
+
+
+
 // Initializations
 const app = express();
 require('./database');
@@ -24,6 +29,7 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs');
 
 // middlewares
+
 app.use(express.urlencoded({extended: false}));
 app.use(methodOverride('_method'));
 app.use(session({
@@ -34,6 +40,33 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+
+app.use(upload());
+
+app.post('/upload',function(req,res){
+  console.log(req.files);
+  if(req.files.upfile){
+    var file = req.files.upfile,
+      name = file.name,
+      type = file.mimetype;
+    var uploadpath = __dirname + '/public/uploads/' + name;
+    file.mv(uploadpath,function(err){
+      if(err){
+        console.log("File Upload Failed",name,err);
+        res.send("Error Occured!")
+      }
+      else {
+        console.log("File Uploaded",name);
+        res.render('notes/new-note',{msg: "File uploaded succesfully"})
+      }
+    });
+  }
+  else {
+    res.send("No File selected !");
+    res.end();
+  };
+})
+
 
 // Global Variables
 app.use((req, res, next) => {
