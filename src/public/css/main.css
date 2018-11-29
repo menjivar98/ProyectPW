@@ -5,10 +5,12 @@ body{
     font-family: 'Allerta Stencil', sans-serif;
 }
 
+
+
 img{
 margin-top: 22px;
-height: 25vh;
-width: 25vw;
+height: 100%;
+width: 100%;
 max-height: inherit;
 max-width: inherit;
 }
@@ -23,9 +25,13 @@ button.btn.btn-danger.btn-block.btn-sm{
 }
 
 img.about{
-    width: 50vw;
-    height: 40vh;
-    border-radius: 6%;
+    width: 100vw;
+    height: 100vh;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 /*
@@ -74,7 +80,7 @@ nav.navbar li a.active {
 
 nav.navbar li a:hover:not(.active) {
     background-color: #555;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 nav.u {
@@ -249,10 +255,13 @@ div.prx{
 display: flex;
 }
 
+
+
 div.txt{
     text-align: justify;
     text-justify: inter-word;
     padding-left: 66px;
+    font-size: 20px;
 }
 img.parax{
     display: block;
@@ -314,13 +323,57 @@ justify-content: center;
 display:flex;
 }
 
+.btn-success{
+    background-image: linear-gradient(33deg, rgb(84, 180, 209), rgb(80, 132, 80));  
+    color:white;
+    border:none;
+    position:relative;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    font-family: 'Allerta Stencil', sans-serif;
+    justify-self: center;
+}
 div.about{
     display: flex;
     justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: -4;
+    text-shadow: 2px 0 0 rgb(2, 2, 2), -2px 0 0 rgb(0, 0, 0), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 #fff, -1px 1px 0 #fff;
+
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%, -50%);
+font-size: 23px;
+    
+}
+
+.btn-block{
+    font-size:23px;
+}
+
+textarea.form-control{
+margin-left: 0;
+margin-right: 0;
+}
+
+.card-header{
+    font-size: 23px;
+}
+
+.row{
+    margin-bottom: 20px;
+}
 button{
-    background:rgb(80, 132, 80); 
+    background-image: linear-gradient(33deg, rgb(84, 180, 209), rgb(80, 132, 80));  
     color:white;
     border:none;
     position:relative;
@@ -335,7 +388,7 @@ button{
   }
   button:hover{
     background:white;
-    color:rgb(80, 132, 80); 
+    color:rgb(25, 48, 25); 
   }
   button:before,button:after{
     content:'';
@@ -344,7 +397,7 @@ button{
     right:0;
     height:2px;
     width:0;
-    background: rgb(80, 132, 80); 
+    background: rgb(33, 44, 33); 
     transition:400ms ease all;
   }
   button:after{
