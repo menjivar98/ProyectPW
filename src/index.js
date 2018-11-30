@@ -104,3 +104,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(app.get('port'), () => {
   console.log('Server on port', app.get('port'));
 });
+
+//Heroku config
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config()
+}
+
+const DB_URI = process.env.DB_URI
+const PORT = process.env.PORT
