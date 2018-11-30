@@ -5,10 +5,7 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
 const passport = require('passport');
-
-
 var upload = require('express-fileupload');
-
 
 
 // Initializations
@@ -30,6 +27,11 @@ app.set('view engine', '.hbs');
 
 // middlewares
 
+app.get('/download', (req, res) => res.download('./src/public/uploads/'+{upfile}))
+
+
+
+
 app.use(express.urlencoded({extended: false}));
 app.use(methodOverride('_method'));
 app.use(session({
@@ -41,10 +43,15 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
 
+
+/*
+*/
+
 app.use(upload());
 
 app.post('/upload',function(req,res){
-  console.log(req.files);
+
+ console.log(req.files);
   if(req.files.upfile){
     var file = req.files.upfile,
       name = file.name,
@@ -65,7 +72,13 @@ app.post('/upload',function(req,res){
     res.send("No File selected !");
     res.end();
   };
+  
 })
+
+/*
+*/
+
+
 
 
 // Global Variables
