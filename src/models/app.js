@@ -1,10 +1,3 @@
-/*
-  Aman Kharbanda
-  Subscribe my channel for more videos
-  https://goo.gl/H91NRo
-  Thanks!
-*/
-
 const express = require('express');
 var app = express();
 var upload = require('express-fileupload');

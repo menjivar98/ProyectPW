@@ -5,8 +5,6 @@ body{
     font-family: 'Allerta Stencil', sans-serif;
 }
 
-
-
 img{
 margin-top: 22px;
 height: 100%;
@@ -16,7 +14,7 @@ max-width: inherit;
 }
 
 .card{
-margin-top: 66px;
+margin-top: 70px;
 align-items: center
 }
 
@@ -124,123 +122,6 @@ font-family: 'Allerta Stencil', sans-serif;
 font-size: 20px;
 color: white;
 }
-
-/*
-hr.a{
-    height: 160vh;
-    width: 1px;
-    color: black;
-    background-color: black;
-    margin: 0%;
-    border: none;
-    position: fixed;
-    left: 3px;
-    top: 0px;
-}
-
-hr.a1{
-    height: 100vh;
-    width: 2px;
-    color: rgb(46, 46, 46);
-    background-color: rgb(43, 43, 43);
-    margin: 0%;
-    border: none;
-    position: fixed;
-    left: 9px;
-    top: 0px;
-}
-
-hr.b{
-    height: 100vh;
-    width: 3px;
-    color: rgb(95, 95, 95);
-    background-color: rgb(87, 87, 87);
-    margin: 0%;
-    border: none;
-    position: fixed;
-    left: 18px;
-    top: 0px;
-}
-
-hr.b1{
-    height: 100vh;
-    width: 4px;
-    color: rgb(116, 116, 116);
-    background-color: rgb(126, 126, 126);
-    margin: 0%;
-    border: none;
-    position: fixed;
-    left: 33px;
-    top: 0px;
-}
-
-hr.c{
-    height: 100vh;
-    width: 6px;
-    color: rgb(177, 177, 177);
-    background-color: rgb(161, 161, 161);
-    margin: 0%;
-    border: none;
-    position: fixed;
-    left: 51px;
-    top: 0px;
-}
-
-hr.-a{
-    height: 100vh;
-    width: 1px;
-    color: black;
-    background-color: black;
-    margin: 0%;
-    border: none;
-    position: fixed;
-    right: 3px;
-}
-
-hr.-a1{
-    height: 100vh;
-    width: 2px;
-    color: black;
-    background-color: black;
-    margin: 0%;
-    border: none;
-    position: fixed;
-    right: 9px;
-}
-
-hr.-b{
-    height: 100vh;
-    width: 3px;
-    color: black;
-    background-color: black;
-    margin: 0%;
-    border: none;
-    position: fixed;
-    right: 18px;
-}
-
-hr.-b1{
-    height: 100vh;
-    width: 4px;
-    color: black;
-    background-color: black;
-    margin: 0%;
-    border: none;
-    position: fixed;
-    right: 33px;
-}
-
-hr.-c{
-    height: 100vh;
-    width: 6px;
-    color: black;
-    background-color: black;
-    margin: 0%;
-    border: none;
-    position: fixed;
-    right: 51px;
-}
-*/
 
 div.prx{
    // The image used 
