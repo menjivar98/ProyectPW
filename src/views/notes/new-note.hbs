@@ -5,6 +5,19 @@
       <h3>NEW NOTE</h3>
     </div>
     <div class="card-body">
+
+  <form class="fileupload" action="/upload" method="post" enctype="multipart/form-data">
+      <h1>Upload File Here</h1>
+      <input type="file" name="upfile" value="">
+      <br>
+      <br>
+      
+      <input type="submit" />
+      <br>
+      <br>
+      
+    </form>
+
       <form action="/notes/new-note" method="POST">
         <div class="form-group">
           <input type="text" name="title" class="form-control" placeholder="Title" autofocus/>
@@ -18,6 +31,7 @@
         </div>
 
         <div class="form-group">
+          <br>
           <button class="btn btn-primary btn-block" type="submit">
             SAVE
           </button>
@@ -25,17 +39,9 @@
         
       </form>
 
-      <!--
-          <form class="fileupload" action="/upload" method="post" enctype="multipart/form-data">
-      <h1>Upload File Here</h1>
-      <input type="file" name="upfile" value="">
-      <input type="submit" />
-
-    -->
-
-    </form>
+      
+        
     </div>
   </div>
  
 </div>
-

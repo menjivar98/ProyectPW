@@ -8,6 +8,7 @@ const passport = require('passport');
 var upload = require('express-fileupload');
 
 
+
 // Initializations
 const app = express();
 require('./database');
@@ -27,7 +28,8 @@ app.set('view engine', '.hbs');
 
 // middlewares
 
-app.get('/download', (req, res) => res.download('./src/public/uploads/'+{upfile}))
+
+app.get('/download', (req, res) => res.download('./src/public/uploads/1.png'))
 
 
 
@@ -64,7 +66,7 @@ app.post('/upload',function(req,res){
       }
       else {
         console.log("File Uploaded",name);
-        res.render('notes/new-note',{msg: "File uploaded succesfully"})
+        res.redirect('/notes/add');
       }
     });
   }

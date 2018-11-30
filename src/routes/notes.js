@@ -3,11 +3,6 @@ const router = express.Router();
 var app=require('express')();
 
 
-app.get('/notes/download', function(res){
-  window.open('/index.js');
-})
-
-
 
 // Models
 const Note = require('../models/Note');
@@ -29,9 +24,11 @@ router.post('/notes/new-note', isAuthenticated, async (req, res) => {
   if (!description) {
     errors.push({text: 'Please Write a Description'});
   }
+
+  /*
   if (!upfile) {
     errors.push({text: 'Please Upload a File'});
-  }
+  } */
   if (errors.length > 0) {
     res.render('notes/new-note', {
       errors,
