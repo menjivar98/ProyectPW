@@ -15,7 +15,7 @@ max-width: inherit;
 
 .card{
 margin-top: 70px;
-align-items: center
+align-items: center;
 }
 
 button.btn.btn-danger.btn-block.btn-sm{
@@ -26,7 +26,7 @@ img.about{
     width: 100vw;
     height: 100vh;
     
-        // Center and scale the image nicely 
+        /* Center and scale the image nicely */ 
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -75,7 +75,7 @@ nav.navbar li a:hover:not(.active) {
 
 nav.u {
     height: 100px;
-    background-color: red; // For browsers that do not support gradients 
+    background-color: red; /* For browsers that do not support gradients */ 
     background-image: linear-gradient(0deg, rgb(37, 37, 168), rgb(80, 132, 80)); 
 text-align: center;
 display: flex;
@@ -89,7 +89,7 @@ padding-right: 50px;
 
 
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
-    background-color: red; // For browsers that do not support gradients 
+    background-color: red; /* For browsers that do not support gradients */ 
     background-image: linear-gradient(183deg, rgb(86, 179, 202), rgb(80, 132, 80)); 
     border-bottom: 5px solid rgb(158, 158, 188);
     height: 9vh;
@@ -124,13 +124,13 @@ color: white;
 }
 
 div.prx{
-   // The image used 
+   /* The image used */
    background-image: url("/../ProyectPW/src/public/img/1.jpg");
 
-   // Set a specific height 
+   /* Set a specific height */
    height: 500px; 
 
-   // Create the parallax scrolling effect 
+   /* Create the parallax scrolling effect */ 
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
@@ -174,9 +174,6 @@ textarea {
 margin: 20px;
 display: flex;
 }
-
-
-
 
 div.button{
     display: flex;
@@ -303,5 +300,3 @@ button{
     color:rgb(80, 132, 80); 
     border-radius: 9%;
   }
-
-*/
